@@ -1,0 +1,215 @@
+.product-details-page {
+  padding: var(--spacing-2xl) 0;
+  min-height: calc(100vh - 80px);
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-image {
+  position: sticky;
+  top: calc(80px + var(--spacing-lg));
+  height: fit-content;
+}
+
+.product-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.product-info {
+  padding: var(--spacing-lg) 0;
+}
+
+.product-category {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.product-title {
+  font-size: 2.25rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--spacing-lg) 0;
+  line-height: 1.2;
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xl);
+}
+
+.product-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.meta-item i {
+  color: var(--color-primary);
+  width: 16px;
+}
+
+.product-description {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.product-description h3 {
+  margin: 0 0 var(--spacing-md) 0;
+  color: var(--color-text-primary);
+}
+
+.product-description p {
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+}
+
+.product-actions {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+/* My Products Page */
+.my-products-page,
+.add-product-page,
+.edit-product-page {
+  padding: var(--spacing-2xl) 0;
+  min-height: calc(100vh - 80px);
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.page-header h1 {
+  margin: 0;
+  color: var(--color-text-primary);
+}
+
+.page-header p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.product-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-2xl);
+}
+
+.product-form {
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.form-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: flex-end;
+  margin-top: var(--spacing-xl);
+}
+
+.product-card__status {
+  position: absolute;
+  top: var(--spacing-sm);
+  left: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--color-success);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-sm);
+}
+
+.btn--error {
+  background-color: var(--color-error);
+  color: white;
+  border-color: var(--color-error);
+}
+
+.btn--error:hover:not(:disabled) {
+  background-color: #dc2626;
+  border-color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .product-details {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .product-image {
+    position: static;
+  }
+  
+  .product-image img {
+    height: 300px;
+  }
+  
+  .product-title {
+    font-size: 1.75rem;
+  }
+  
+  .product-price {
+    font-size: 1.5rem;
+  }
+  
+  .product-actions {
+    flex-direction: column;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+}
