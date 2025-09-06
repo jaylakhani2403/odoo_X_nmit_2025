@@ -51,3 +51,30 @@ This MVP focuses on **core task management & communication** with a responsive U
 6. Task Detail View  
 7. Threaded Communication  
 8. User Profile / Settings  
+
+---
+
+## 👥 Team Details
+
+### Team Leader  
+**Name:** Jay Lakhani  
+**Email:** 23ce062@charusat.edu.in  
+**Phone:** 6356382734  
+
+### Reviewer  
+**Name:** Aman Patel (ampa)  
+
+### Team Members  
+- **Rudra Dudhat**  
+  - Email: 23ce028@charusat.edu.in  
+  - Phone: 9978652299  
+
+- **Nishit Desai**  
+  - Email: 23ce021@charusat.edu.in  
+  - Phone: 6352098559  
+
+- **Prince Diyora**  
+  - Email: 23ce024@charusat.edu.in  
+  - Phone: 9265919172  
+
+---
